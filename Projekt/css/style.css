@@ -374,8 +374,8 @@ body {
 .cards .card__top {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
-  height: 100%;
+  width: 400px;
+  height: 300px;
   overflow: hidden;
 }
 .cards .card__bottom {
