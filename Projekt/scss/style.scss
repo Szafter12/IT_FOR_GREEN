@@ -196,10 +196,13 @@ body {
 		overflow: hidden;
 
 		&__top {
-			object-fit: cover;
-			width: 400px;
-			height: 300px;
 			overflow: hidden;
+			img {
+				object-fit: cover;
+				object-position: center;
+				width: 400px;
+				height: 300px;
+			}
 		}
 
 		&__bottom {

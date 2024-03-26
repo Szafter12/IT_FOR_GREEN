@@ -372,11 +372,15 @@ body {
   overflow: hidden;
 }
 .cards .card__top {
+  overflow: hidden;
+}
+.cards .card__top img {
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   width: 400px;
   height: 300px;
-  overflow: hidden;
 }
 .cards .card__bottom {
   padding: 2em 2em;
