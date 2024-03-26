@@ -92,6 +92,7 @@ body {
 		&-text {
 			font-size: clamp(2.2rem, 3vw, 3.2rem);
 			color: $light-gray;
+			transition: font-size 0.3s;
 
 			&--span {
 				color: $orange-color;
@@ -163,8 +164,118 @@ body {
 	}
 }
 
+// article header
+
+.article-header {
+	height: 60vh;
+	background-image: url('../img/article-header.jpg');
+}
+
+.cards {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2em;
+	flex-wrap: wrap;
+
+	.card {
+		width: 400px;
+		min-height: 600px;
+		// border: 3px solid $pure-white;
+		border-top-left-radius: 12px;
+		border-top-right-radius: 12px;
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+		color: $light-gray;
+		overflow: hidden;
+
+		&__top {
+			object-fit: cover;
+		}
+
+		&__bottom {
+			padding: 2em 2em;
+			border-top: 3px solid $pure-white;
+
+			&-title {
+				margin-bottom: 1em;
+				font-weight: 300;
+				letter-spacing: 2px;
+				font-size: clamp(2.8rem, 3vw, 3.8rem);
+			}
+
+			&-text {
+				font-size: clamp(1.8rem, 3vw, 2rem);
+			}
+
+			&-info {
+				margin-top: 1em;
+				font-size: 1.7rem;
+			}
+
+			&-link {
+				margin-top: 2em;
+				text-align: right;
+
+				a {
+					color: $orange-color;
+					font-size: 2rem;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}
+
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 4em;
+	height: 50vh;
+	background-image: url('../img/buildings-2602324_1920.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	overflow: hidden;
+	z-index: 1;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: -1;
+	}
+
+	hr {
+		width: 80%;
+		border-radius: 25px;
+	}
+
+	&__heading {
+		padding: 0 2em;
+		font-size: 3rem;
+		font-weight: 300;
+		color: $light-gray;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+}
+
+// about us
+
+.aboutUs {
+	
+}
+
 @media (min-width: 992px) {
 	.nav {
+		justify-content: space-around;
 		&__items {
 			display: flex;
 			align-items: flex-start;
@@ -182,7 +293,6 @@ body {
 			text-decoration: none;
 			font-weight: 300;
 			text-align: center;
-			transition: color 0.3s;
 
 			&::before {
 				content: '';
@@ -195,7 +305,7 @@ body {
 				scale: 0;
 				translate: -50%;
 				background-color: $orange-color;
-				transition: scale 0.3s;
+				transition: scale 0.2s;
 			}
 
 			&:hover::before {
