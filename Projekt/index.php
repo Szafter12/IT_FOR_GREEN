@@ -129,9 +129,9 @@
         </h2>
         <div class="wrapper">
             <div class="aboutUs__history">
-                <h3 class="aboutUs__title">Historia Powstania</h3>
+                <h3 class="aboutUs__title"><span>Historia Powstania</span></h3>
                 <p class="aboutUs__text">
-                    Strona "WolneSpojrzenie" narodziła się z głębokiej potrzeby stworzenia przestrzeni, w której
+                    Strona LiberoCity narodziła się z głębokiej potrzeby stworzenia przestrzeni, w której
                     ludzie mogliby swobodnie wyrażać swoje opinie i dzielić się swoimi spostrzeżeniami na tematy
                     dotyczące ich miasta i świata. Wszystko zaczęło się od doświadczenia założycieli, którzy
                     zauważyli brak otwartego forum dyskusyjnego, gdzie mieszkańcy mogliby bez przeszkód wymieniać
@@ -145,11 +145,80 @@
                     potrzebę wolności słowa i wzajemnego szacunku w dyskusjach online.
                 </p>
             </div>
+            <div class="aboutUs__mission">
+                <h3 class="aboutUs__title"><span>Nasza Misja</span></h3>
+                <p class="aboutUs__text">
+                    Misją LiberoCity jest stworzenie otwartej, demokratycznej przestrzeni internetowej, gdzie
+                    ludzie mogą swobodnie wyrażać swoje opinie na tematy dotyczące ich miasta, społeczeństwa i świata,
+                    bez obaw o cenzurę czy represje. Naszym celem jest promowanie dialogu, współpracy i zrozumienia
+                    poprzez wolne wymiany poglądów oraz wspieranie pluralizmu i różnorodności w naszej społeczności.
+                    <br><br>
+                    Chcemy być miejscem, gdzie każdy głos ma znaczenie, a dyskusje prowadzone są w atmosferze szacunku i
+                    empatii. Dążymy do tego, aby nasza platforma stała się narzędziem budowania społeczności,
+                    wspierającą aktywne zaangażowanie obywateli w sprawy lokalne i globalne. Poprzez naszą misję chcemy
+                    wspierać wolność słowa i demokratyczne wartości, promując jednocześnie odpowiedzialność i uczciwość
+                    w wyrażaniu opinii.Misją "WolnegoSpojrzenia" jest stworzenie otwartej, demokratycznej przestrzeni
+                    internetowej, gdzie ludzie mogą swobodnie wyrażać swoje opinie na tematy dotyczące ich miasta,
+                    społeczeństwa i świata, bez obaw o cenzurę czy represje. Naszym celem jest promowanie dialogu,
+                    współpracy i zrozumienia poprzez wolne wymiany poglądów oraz wspieranie pluralizmu i różnorodności w
+                    naszej społeczności.
+                </p>
+            </div>
         </div>
-
     </section>
+
+    <section id="contact" class="contact section-padding section white-section">
+
+        <div class="white-block white-block-right"></div>
+        <div class="white-block white-block-left"></div>
+
+        <h2 class="section-heading">Kontakt</h2>
+
+        <div class="wrapper">
+            <form class="contact__form">
+                <div class="contact__form-top">
+                    <label for="name" class="contact__form-label">Imię i Nazwisko</label>
+                    <input type="text" class="contact__form-input" id="name">
+
+                    <label for="email" class="contact__form-label">Adres e-mail</label>
+                    <input type="text" class="contact__form-input" id="email">
+                </div>
+
+                <label for="msg" class="contact__form-label">Wiadomość</label>
+                <textarea id="msg" class="contact__form-textarea"></textarea>
+
+                <button type="submit" class="contact__form-btn btn-animation">Wyślij</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrapper">
+
+            <div class="footer__boxes">
+
+                <div class="footer__box">
+                    <h3 class="footer__box-title">Libero City</h3>
+                    <p>
+                        
+                    </p>
+                </div>
+
+
+                <div class="footer__box-social">
+                    <a href="https://twitter.com/home?lang=pl" target="_blank" class="footer__box-link"><i
+                            class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.facebook.com/?locale=pl_PL" target="_blank" class="footer__box-link"><i
+                            class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__box-link"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <hr>
+            <p class="footer__bottom-text">Copyright &copy; <span class="footer__year"></span> | Libero City</p>
+    </footer>
 
     <script src="./js/main.js"></script>
 </body>
 
-</html>`
+</html>
