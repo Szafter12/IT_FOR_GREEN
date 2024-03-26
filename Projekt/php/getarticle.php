@@ -22,12 +22,16 @@ $title = $article->title;
 
 $query = "SELECT path FROM photos WHERE article_id = $articleId";
 $result = $connect->query($query);
-$zdjecia = array();
+$photos = array();
 while($row = $result->fetch_object()){
-    $zdjecia[] = "$domena/img/$row->path";
-}
-echo "<pre>";
-    print_r($zdjecia);
-    echo "<img src='$zdjecia[0]'>";
-echo "</pre>";
+    $photos[] = "http://$domena/img/$row->path";
+};
+
+$query = "SELECT path FROM files WHERE article_id = $articleId";
+$result = $connect->query($query);
+$files = array();
+while($row = $result->fetch_object()){
+    $files[] = "http://$domena/files/$row->path";
+};
+
 
