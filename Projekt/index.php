@@ -54,6 +54,7 @@
         <div class="header__browser">
             <input class="header__browser-input" type="text" id="browser" placeholder="Wpisz szukaną frazę">
         </div>
+        <a class="header__btn" href="./tempalatedoinputa.html">Dodaj post</a>
         <div class="white-block white-block-left"></div>
     </header>
 
@@ -63,20 +64,20 @@
         </h2>
         <div class="wrapper">
             <div class="cards">
-                
 
-                <?php 
-                
+
+                <?php
+
                 require('./php/mainPageArticles.php');
 
-                for($i=0; $i<$numberOfArticles; $i++){
+                for ($i = 0; $i < $numberOfArticles; $i++) {
                     $title = $titles[$i];
                     $add_date = $add_dates[$i];
                     $author = $authors[$i];
-                    $beginning = $beginnings[$i]."...";
+                    $beginning = $beginnings[$i] . "...";
                     $photo = $photos[$i];
                     $articleId = $articseIds[$i];
-                    echo<<< et
+                    echo <<< et
 
                         <div class="card">
                             <div class="card__top">
@@ -100,15 +101,15 @@
 
                     et;
                 }
-                
 
-                
+
+
                 ?>
 
-                
-                
 
-                
+
+
+
             </div>
         </div>
     </section>
@@ -200,18 +201,15 @@
                 <div class="footer__box">
                     <h3 class="footer__box-title">Libero City</h3>
                     <p>
-                        
+
                     </p>
                 </div>
 
 
                 <div class="footer__box-social">
-                    <a href="https://twitter.com/home?lang=pl" target="_blank" class="footer__box-link"><i
-                            class="fab fa-twitter-square"></i></a>
-                    <a href="https://www.facebook.com/?locale=pl_PL" target="_blank" class="footer__box-link"><i
-                            class="fab fa-facebook-square"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank" class="footer__box-link"><i
-                            class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/home?lang=pl" target="_blank" class="footer__box-link"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.facebook.com/?locale=pl_PL" target="_blank" class="footer__box-link"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__box-link"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
             <hr>
