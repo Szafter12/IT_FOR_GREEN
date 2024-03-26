@@ -42,22 +42,22 @@
         <div class="white-block white-block-left"></div>
     </header>
 
-    <form class="form-maker section-padding wrapper" method="post" action="./php/articleadd.php">
+    <form class="form-maker section-padding wrapper" method="post" action="./php/articleadd.php" enctype="multipart/form-data">
         <div class="input-container">
             <label class="form-label" for="author">Autor</label>
-            <input class="form-input" type="text" name="author">
+            <input class="form-input" type="text" name="author" required>
         </div>
         <div class="input-container">
             <label class="form-label" for="title">tytuł</label>
-            <input class="form-input" type="text" name="title">
+            <input class="form-input" type="text" name="title" required>
         </div>
         <div class="input-container">
             <label class="form-label" for="content">Treść posta</label>
-            <textarea class="msg" name="content"></textarea>
+            <textarea class="msg" name="content" required></textarea>
         </div>
         <div class="input-container">
             <label class="form-label" for="photos">Prześlij zdjęcia</label>
-            <input class="form-file" type="file" name="photos" multiple>
+            <input class="form-file" type="file" name="photos" multiple required>
         </div>
         <div class="input-container">
             <label class="form-label" for="photos">Prześlij pliki</label>

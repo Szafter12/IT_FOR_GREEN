@@ -16,3 +16,14 @@ $title = $_POST['title'];
 
 $query = "INSERT INTO article (content, author, title, status) VALUES ('$content', '$author','$title', 'in_progres')";
 $connect->query($query);
+
+echo "<pre>";
+    print_r($_FILES['photos']);
+    print_r($_FILES['files']);
+echo "</pre>";
+
+$articleId = $connect->insert_id;
+
+
+
+
