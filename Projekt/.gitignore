@@ -1,0 +1,3 @@
+#ignorowanie wszytkich plikow w img i files
+/img/*
+/files/*
