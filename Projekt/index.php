@@ -63,116 +63,52 @@
         </h2>
         <div class="wrapper">
             <div class="cards">
+                
 
-                <div class="card">
-                    <div class="card__top">
-                        <img src="./img/card-img.jpg" alt="">
-                    </div>
-                    <div class="card__bottom">
-                        <h3 class="card__bottom-title">tytul1</h3>
-                        <p class="card__bottom-text">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit quidem quia obcaecati
-                            quaerat, dolores sapiente!
-                        </p>
-                        <div class="card__bottom-info">
-                            <p class="author">Jim</p>
-                            <p class="date">1.02.2024</p>
-                        </div>
-                        <p class="card__bottom-link">
-                            <a href="./article.html">read more...</a>
-                        </p>
-                    </div>
-                </div>
+                <?php 
+                
+                require('./php/mainPageArticles.php');
 
-                <div class="card">
-                    <div class="card__top">
-                        <img src="./img/card-img.jpg" alt="">
-                    </div>
-                    <div class="card__bottom">
-                        <h3 class="card__bottom-title">tytul1</h3>
-                        <p class="card__bottom-text">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit quidem quia obcaecati
-                            quaerat, dolores sapiente!
-                        </p>
-                        <div class="card__bottom-info">
-                            <p class="author">Jim</p>
-                            <p class="date">1.02.2024</p>
-                        </div>
-                        <p class="card__bottom-link"><a href="">read more...</a></p>
-                    </div>
-                </div>
+                for($i=0; $i<$numberOfArticles; $i++){
+                    $title = $titles[$i];
+                    $add_date = $add_dates[$i];
+                    $author = $authors[$i];
+                    $beginning = $beginnings[$i]."...";
+                    $photo = $photos[$i];
+                    $articleId = $articseIds[$i];
+                    echo<<< et
 
-                <div class="card">
-                    <div class="card__top">
-                        <img src="./img/card-img.jpg" alt="">
-                    </div>
-                    <div class="card__bottom">
-                        <h3 class="card__bottom-title">tytul1</h3>
-                        <p class="card__bottom-text">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit quidem quia obcaecati
-                            quaerat, dolores sapiente!
-                        </p>
-                        <div class="card__bottom-info">
-                            <p class="author">Jim</p>
-                            <p class="date">1.02.2024</p>
+                        <div class="card">
+                            <div class="card__top">
+                                <img src="$photo" alt="">
+                            </div>
+                            <div class="card__bottom">
+                                <h3 class="card__bottom-title">$title</h3>
+                                <p class="card__bottom-text">
+                                    $beginning
+                                </p>
+                                <div class="card__bottom-info">
+                                    <p class="author">$author</p>
+                                    <p class="date">$add_date</p>
+                                </div>
+                                <p class="card__bottom-link"><a href="http://localhost/IT_FOR_GREEN/Projekt/article.php?artId=$articleId">czytaj dalej...</a></p>
+                            </div>
                         </div>
-                        <p class="card__bottom-link"><a href="">read more...</a></p>
-                    </div>
-                </div>
 
-                <div class="card">
-                    <div class="card__top">
-                        <img src="./img/card-img.jpg" alt="">
-                    </div>
-                    <div class="card__bottom">
-                        <h3 class="card__bottom-title">tytul1</h3>
-                        <p class="card__bottom-text">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit quidem quia obcaecati
-                            quaerat, dolores sapiente!
-                        </p>
-                        <div class="card__bottom-info">
-                            <p class="author">Jim</p>
-                            <p class="date">1.02.2024</p>
-                        </div>
-                        <p class="card__bottom-link"><a href="">read more...</a></p>
-                    </div>
-                </div>
 
-                <div class="card">
-                    <div class="card__top">
-                        <img src="./img/card-img.jpg" alt="">
-                    </div>
-                    <div class="card__bottom">
-                        <h3 class="card__bottom-title">tytul1</h3>
-                        <p class="card__bottom-text">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit quidem quia obcaecati
-                            quaerat, dolores sapiente!
-                        </p>
-                        <div class="card__bottom-info">
-                            <p class="author">Jim</p>
-                            <p class="date">1.02.2024</p>
-                        </div>
-                        <p class="card__bottom-link"><a href="">read more...</a></p>
-                    </div>
-                </div>
 
-                <div class="card">
-                    <div class="card__top">
-                        <img src="./img/card-img.jpg" alt="">
-                    </div>
-                    <div class="card__bottom">
-                        <h3 class="card__bottom-title">tytul1</h3>
-                        <p class="card__bottom-text">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit quidem quia obcaecati
-                            quaerat, dolores sapiente!
-                        </p>
-                        <div class="card__bottom-info">
-                            <p class="author">Jim</p>
-                            <p class="date">1.02.2024</p>
-                        </div>
-                        <p class="card__bottom-link"><a href="">read more...</a></p>
-                    </div>
-                </div>
+
+                    et;
+                }
+                
+
+                
+                ?>
+
+                
+                
+
+                
             </div>
         </div>
     </section>
@@ -216,4 +152,4 @@
     <script src="./js/main.js"></script>
 </body>
 
-</html>
+</html>`
