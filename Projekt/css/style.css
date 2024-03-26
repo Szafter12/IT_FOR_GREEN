@@ -343,8 +343,21 @@ body {
   color: hsl(0, 0%, 89%);
   font-size: 2rem;
 }
+.header__btn {
+  padding: 1em 2em;
+  border: 2px solid #ff5833;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 2rem;
+  color: hsl(0, 0%, 89%);
+}
 
 .article-header {
+  height: 60vh;
+  background-image: url("../img/article-header.jpg");
+}
+
+.article-maker {
   height: 60vh;
   background-image: url("../img/article-header.jpg");
 }
@@ -434,6 +447,189 @@ body {
   letter-spacing: 1px;
 }
 
+.form-maker {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3em;
+}
+.form-maker .input-container {
+  position: relative;
+  width: 80%;
+}
+.form-maker .form-input {
+  padding: 1em;
+  width: 100%;
+  background: none;
+  border: 2px solid #ff5833;
+  color: hsl(0, 0%, 89%);
+}
+.form-maker .form-file {
+  padding: 1em;
+  border: 2px solid #ff5833;
+}
+.form-maker .form-label {
+  position: absolute;
+  padding: 0 0.5em;
+  top: -10px;
+  left: 30px;
+  background-color: hsl(0, 0%, 25%);
+}
+.form-maker .msg {
+  width: 100%;
+  min-height: 300px;
+  resize: vertical;
+  background: none;
+  border: 2px solid #ff5833;
+}
+.form-maker .btn {
+  padding: 1em 2em;
+  border: 2px solid #ff5833;
+  background: none;
+  cursor: pointer;
+  color: hsl(0, 0%, 89%);
+  transition: background-color 0.2s;
+  font-size: 2.2rem;
+}
+.form-maker .btn:hover {
+  background-color: #f86d4e;
+}
+
+.article__gallery {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-auto-rows: 40rem;
+  grid-auto-flow: dense;
+}
+.article__gallery-img {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 12px;
+}
+
+.aboutUs__title {
+  margin-bottom: 1em;
+  font-size: clamp(2.2rem, 3vw, 2.8rem);
+}
+.aboutUs__title span {
+  position: relative;
+}
+.aboutUs__title span::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 40%;
+  height: 3px;
+  border-radius: 25px;
+  background-color: #ff5833;
+}
+.aboutUs__history {
+  margin-bottom: 5em;
+}
+.aboutUs__text {
+  font-size: clamp(2rem, 3vw, 2.2rem);
+}
+
+.contact {
+  position: relative;
+  background-image: linear-gradient(90deg, rgb(255, 88, 51) 0%, rgb(85, 85, 85) 70%);
+  overflow: hidden;
+}
+.contact .white-block-left {
+  background-color: hsl(0, 0%, 25%);
+}
+.contact__form-top, .contact__form {
+  display: flex;
+  flex-direction: column;
+}
+.contact__form-label {
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+.contact__form-input {
+  margin-bottom: 2em;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+}
+.contact__form-textarea {
+  margin-bottom: 2em;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  resize: vertical;
+}
+.contact__form-btn {
+  align-self: flex-end;
+  padding: 1em;
+  width: 100%;
+  max-width: 300px;
+  color: hsl(0, 0%, 89%);
+  border: none;
+  border-radius: 8px;
+  background-color: #ff5833;
+  cursor: pointer;
+}
+.contact__form-btn::before {
+  background-color: #f86d4e;
+}
+
+.footer {
+  position: relative;
+  color: hsl(0, 0%, 89%);
+  background-color: hsl(0, 0%, 25%);
+}
+.footer .wrapper {
+  padding: 6em 2em 2em;
+}
+.footer__box {
+  font-size: 1.4rem;
+}
+.footer__box-title i {
+  margin-right: 0.3em;
+}
+.footer__box-desktop {
+  display: none;
+}
+.footer__box-title {
+  margin-bottom: 1em;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.footer__box-social {
+  margin: 6em 0 2em;
+  text-align: center;
+}
+.footer__box-link {
+  padding: 0 0.3em;
+  font-size: 3.6rem;
+  color: hsl(0, 0%, 89%);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer__box-link:first-child {
+  padding-left: 0;
+}
+.footer__box-link:hover {
+  color: #ff5833;
+}
+.footer__bottom-text {
+  padding: 2em;
+  text-align: center;
+}
+
 @media (min-width: 992px) {
   .nav {
     justify-content: space-around;
@@ -449,7 +645,7 @@ body {
     position: relative;
     margin: 0.5em 0;
     padding: 0.5em 2em;
-    font-size: clamp(2.8rem, 3vw, 3.2rem);
+    font-size: clamp(2.2rem, 3vw, 2.8rem);
     color: hsl(0, 0%, 80%);
     text-decoration: none;
     font-weight: 300;

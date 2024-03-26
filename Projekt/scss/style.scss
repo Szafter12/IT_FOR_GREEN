@@ -162,11 +162,25 @@ body {
 			font-size: 2rem;
 		}
 	}
+
+	&__btn {
+		padding: 1em 2em;
+		border: 2px solid $orange-color;
+		border-radius: 8px;
+		font-weight: bold;
+		font-size: 2rem;
+		color: $pure-white;
+	}
 }
 
 // article header
 
 .article-header {
+	height: 60vh;
+	background-image: url('../img/article-header.jpg');
+}
+
+.article-maker {
 	height: 60vh;
 	background-image: url('../img/article-header.jpg');
 }
@@ -267,10 +281,227 @@ body {
 	}
 }
 
+// article
+
+.form-maker {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 3em;
+
+	.input-container {
+		position: relative;
+		width: 80%;
+	}
+
+	.form-input {
+		padding: 1em;
+		width: 100%;
+		background: none;
+		border: 2px solid $orange-color;
+		color: $pure-white;
+	}
+
+	.form-file {
+		padding: 1em;
+		border: 2px solid $orange-color;
+	}
+
+	.form-label {
+		position: absolute;
+		padding: 0 0.5em;
+		top: -10px;
+		left: 30px;
+		background-color: $dark-gray;
+	}
+
+	.msg {
+		width: 100%;
+		min-height: 300px;
+		resize: vertical;
+		background: none;
+		border: 2px solid $orange-color;
+	}
+
+	.btn {
+		padding: 1em 2em;
+		border: 2px solid $orange-color;
+		background: none;
+		cursor: pointer;
+		color: $pure-white;
+		transition: background-color 0.2s;
+		font-size: 2.2rem;
+
+		&:hover {
+			background-color: #f86d4e;
+		}
+	}
+}
+
+.article__gallery {
+	display: grid;
+	padding: 0;
+	margin: 0;
+	grid-gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	grid-auto-rows: 40rem;
+	grid-auto-flow: dense;
+
+	&-img {
+		position: relative;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+		border-radius: 12px;
+	}
+}
+
 // about us
 
 .aboutUs {
-	
+	&__title {
+		margin-bottom: 1em;
+		font-size: clamp(2.2rem, 3vw, 2.8rem);
+
+		span {
+			position: relative;
+
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: -10px;
+				left: 0;
+				width: 40%;
+				height: 3px;
+				border-radius: 25px;
+				background-color: $orange-color;
+			}
+		}
+	}
+
+	&__history {
+		margin-bottom: 5em;
+	}
+
+	&__text {
+		font-size: clamp(2rem, 3vw, 2.2rem);
+	}
+}
+
+// contact
+
+.contact {
+	position: relative;
+	background-image: $light-gradient;
+	overflow: hidden;
+
+	.white-block-left {
+		background-color: $dark-gray;
+	}
+
+	&__form-top,
+	&__form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__form-label {
+		margin-bottom: 0.5em;
+		text-transform: uppercase;
+	}
+
+	&__form-input {
+		margin-bottom: 2em;
+		padding: 0.6em 1.2em;
+		border: none;
+		border-radius: 8px;
+		font-size: 1.6rem;
+	}
+
+	&__form-textarea {
+		margin-bottom: 2em;
+		padding: 0.6em 1.2em;
+		border: none;
+		border-radius: 8px;
+		font-size: 1.6rem;
+		resize: vertical;
+	}
+
+	&__form-btn {
+		align-self: flex-end;
+		padding: 1em;
+		width: 100%;
+		max-width: 300px;
+		color: $pure-white;
+		border: none;
+		border-radius: 8px;
+		background-color: $orange-color;
+		cursor: pointer;
+
+		&::before {
+			background-color: #f86d4e;
+		}
+	}
+}
+
+// footer
+
+.footer {
+	position: relative;
+	color: $pure-white;
+	background-color: $dark-gray;
+
+	.wrapper {
+		padding: 6em 2em 2em;
+	}
+
+	&__box {
+		font-size: 1.4rem;
+	}
+
+	&__box-title {
+		i {
+			margin-right: 0.3em;
+		}
+	}
+
+	&__box-desktop {
+		display: none;
+	}
+
+	&__box-title {
+		margin-bottom: 1em;
+		font-size: 3rem;
+		text-transform: uppercase;
+	}
+
+	&__box-social {
+		margin: 6em 0 2em;
+		text-align: center;
+	}
+
+	&__box-link {
+		padding: 0 0.3em;
+		font-size: 3.6rem;
+		color: $pure-white;
+		text-decoration: none;
+		transition: color 0.3s;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:hover {
+			color: $orange-color;
+		}
+	}
+
+	&__bottom-text {
+		padding: 2em;
+		text-align: center;
+	}
 }
 
 @media (min-width: 992px) {
@@ -288,7 +519,7 @@ body {
 			position: relative;
 			margin: 0.5em 0;
 			padding: 0.5em 2em;
-			font-size: clamp(2.8rem, 3vw, 3.2rem);
+			font-size: clamp(2.2rem, 3vw, 2.8rem);
 			color: $light-gray;
 			text-decoration: none;
 			font-weight: 300;
