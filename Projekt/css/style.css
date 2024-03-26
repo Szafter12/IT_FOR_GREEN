@@ -294,9 +294,12 @@ body {
 .nav__items {
   display: none;
 }
+.nav__item {
+  font-size: clamp(2.8rem, 3vw, 4rem);
+  color: hsl(0, 0%, 89%);
+}
 .nav--scroll {
   background-color: rgba(0, 0, 0, 0.9);
-  height: auto;
 }
 
 .header {
@@ -445,6 +448,11 @@ body {
   color: hsl(0, 0%, 80%);
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.article__content {
+  margin: 5em 0;
+  font-size: 2rem;
 }
 
 .form-maker {
@@ -635,11 +643,10 @@ body {
     justify-content: space-around;
   }
   .nav__items {
+    position: unset;
     display: flex;
     align-items: flex-start;
     margin: 0.5em 0;
-    background-color: linear-gradient(90deg, rgb(255, 88, 51) 0%, rgb(85, 85, 85) 70%);
-    transition: all 0.5s ease;
   }
   .nav__item {
     position: relative;

@@ -1,7 +1,7 @@
 const logo = document.querySelector('.nav__logo-img')
 const logoText = document.querySelector('.nav__logo-text')
 const nav = document.querySelector('.nav')
-loaderContainer = document.querySelector('.loader-container')
+const loaderContainer = document.querySelector('.loader-container')
 const footerYear = document.querySelector('.footer__year')
 
 const scroll = () => {
@@ -26,6 +26,5 @@ const handleCurrentYear = () => {
 	footerYear.innerText = year
 }
 
-handleCurrentYear()
-
 window.addEventListener('scroll', scroll)
+handleCurrentYear()

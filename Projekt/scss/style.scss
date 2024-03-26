@@ -108,9 +108,13 @@ body {
 		display: none;
 	}
 
+	&__item {
+		font-size: clamp(2.8rem, 3vw, 4rem);
+		color: $pure-white;
+	}
+
 	&--scroll {
 		background-color: rgba(0, 0, 0, 0.9);
-		height: auto;
 	}
 }
 
@@ -282,6 +286,13 @@ body {
 }
 
 // article
+
+.article {
+	&__content {
+		margin: 5em 0;
+		font-size: 2rem;
+	}
+}
 
 .form-maker {
 	display: flex;
@@ -508,11 +519,10 @@ body {
 	.nav {
 		justify-content: space-around;
 		&__items {
+			position: unset;
 			display: flex;
 			align-items: flex-start;
 			margin: 0.5em 0;
-			background-color: $light-gradient;
-			transition: all 0.5s ease;
 		}
 
 		&__item {
