@@ -272,8 +272,8 @@ body {
   margin: 1em 2em;
 }
 .nav__logo-img {
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 80px;
   transition: width 0.3s, height 0.3s;
 }
 .nav__logo-img--active {
@@ -335,16 +335,7 @@ body {
   color: #ff5833;
 }
 .header__browser {
-  width: 40%;
-}
-.header__browser-input {
-  padding: 1em 1.5em;
-  width: 100%;
-  background: none;
-  border: 2px solid #ff5833;
-  border-radius: 12px;
-  color: hsl(0, 0%, 89%);
-  font-size: 2rem;
+  display: none;
 }
 .header__btn {
   padding: 1em 2em;
@@ -384,6 +375,8 @@ body {
 .cards .card__top {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  overflow: hidden;
 }
 .cards .card__bottom {
   padding: 2em 2em;
@@ -603,7 +596,8 @@ body {
   padding: 6em 2em 2em;
 }
 .footer__box {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  width: 30%;
 }
 .footer__box-title i {
   margin-right: 0.3em;
@@ -638,6 +632,20 @@ body {
   text-align: center;
 }
 
+@media (min-width: 600px) {
+  .header__browser {
+    width: 40%;
+  }
+  .header__browser-input {
+    padding: 1em 1.5em;
+    width: 100%;
+    background: none;
+    border: 2px solid #ff5833;
+    border-radius: 12px;
+    color: hsl(0, 0%, 89%);
+    font-size: 2rem;
+  }
+}
 @media (min-width: 992px) {
   .nav {
     justify-content: space-around;
@@ -645,8 +653,7 @@ body {
   .nav__items {
     position: unset;
     display: flex;
-    align-items: flex-start;
-    margin: 0.5em 0;
+    align-items: center;
   }
   .nav__item {
     position: relative;
@@ -673,6 +680,14 @@ body {
   }
   .nav__item:hover::before {
     scale: 1;
+  }
+  .nav__logo-img {
+    width: 150px;
+    height: 150px;
+  }
+  .nav__logo-img--active {
+    width: 80px;
+    height: 80px;
   }
   .burger-btn {
     display: none;

@@ -80,8 +80,8 @@ body {
 		align-items: center;
 		margin: 1em 2em;
 		&-img {
-			width: 150px;
-			height: 150px;
+			width: 80px;
+			height: 80px;
 			transition: width 0.3s, height 0.3s;
 
 			&--active {
@@ -154,17 +154,7 @@ body {
 	}
 
 	&__browser {
-		width: 40%;
-
-		&-input {
-			padding: 1em 1.5em;
-			width: 100%;
-			background: none;
-			border: 2px solid $orange-color;
-			border-radius: 12px;
-			color: $pure-white;
-			font-size: 2rem;
-		}
+		display: none;
 	}
 
 	&__btn {
@@ -208,6 +198,8 @@ body {
 
 		&__top {
 			object-fit: cover;
+			width: 100%;
+			overflow: hidden;
 		}
 
 		&__bottom {
@@ -469,7 +461,8 @@ body {
 	}
 
 	&__box {
-		font-size: 1.4rem;
+		font-size: 1.6rem;
+		width: 30%;
 	}
 
 	&__box-title {
@@ -515,14 +508,34 @@ body {
 	}
 }
 
+@media (min-width: 400px) {
+}
+
+@media (min-width: 600px) {
+	.header {
+		&__browser {
+			width: 40%;
+
+			&-input {
+				padding: 1em 1.5em;
+				width: 100%;
+				background: none;
+				border: 2px solid $orange-color;
+				border-radius: 12px;
+				color: $pure-white;
+				font-size: 2rem;
+			}
+		}
+	}
+}
+
 @media (min-width: 992px) {
 	.nav {
 		justify-content: space-around;
 		&__items {
 			position: unset;
 			display: flex;
-			align-items: flex-start;
-			margin: 0.5em 0;
+			align-items: center;
 		}
 
 		&__item {
@@ -551,6 +564,18 @@ body {
 
 			&:hover::before {
 				scale: 1;
+			}
+		}
+
+		&__logo {
+			&-img {
+				width: 150px;
+				height: 150px;
+
+				&--active {
+					width: 80px;
+					height: 80px;
+				}
 			}
 		}
 	}
