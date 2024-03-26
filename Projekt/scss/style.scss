@@ -188,7 +188,6 @@ body {
 
 	.card {
 		width: 400px;
-		min-height: 600px;
 		// border: 3px solid $pure-white;
 		border-top-left-radius: 12px;
 		border-top-right-radius: 12px;
@@ -205,6 +204,7 @@ body {
 
 		&__bottom {
 			padding: 2em 2em;
+			min-height: 400px;
 			border-top: 3px solid $pure-white;
 
 			&-title {
