@@ -1,6 +1,7 @@
 const logo = document.querySelector('.nav__logo-img')
 const logoText = document.querySelector('.nav__logo-text')
 const nav = document.querySelector('.nav')
+loaderContainer = document.querySelector('.loader-container')
 
 const scroll = () => {
 	let position = window.scrollY
@@ -14,5 +15,9 @@ const scroll = () => {
 		logoText.classList.remove('nav__logo-text--active')
 	}
 }
+
+window.addEventListener('load', () => {
+	loaderContainer.classList.add('hide-loader')
+})
 
 window.addEventListener('scroll', scroll)
