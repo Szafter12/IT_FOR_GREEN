@@ -482,11 +482,13 @@ body {
   background-color: hsl(0, 0%, 25%);
 }
 .form-maker .msg {
+  padding: 1em;
   width: 100%;
   min-height: 300px;
   resize: vertical;
   background: none;
   border: 2px solid #ff5833;
+  color: hsl(0, 0%, 89%);
 }
 .form-maker .btn {
   padding: 1em 2em;
@@ -635,6 +637,11 @@ body {
 .footer__bottom-text {
   padding: 2em;
   text-align: center;
+}
+
+.footer-maker {
+  background-color: hsl(0, 0%, 3%);
+  overflow: hidden;
 }
 
 @media (min-width: 600px) {
