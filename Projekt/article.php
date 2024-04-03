@@ -31,9 +31,9 @@
         </div>
 
         <div class="nav__items">
-            <a href="./index.html#news" class="nav__item">Aktualności</a>
-            <a href="#about" class="nav__item">O nas</a>
-            <a href="#contact" class="nav__item">Kontakt</a>
+            <a href="./index.php#news" class="nav__item">Aktualności</a>
+            <a href="./index.php#about" class="nav__item">O nas</a>
+            <a href="./index.php#contact" class="nav__item">Kontakt</a>
         </div>
     </nav>
     <?php
