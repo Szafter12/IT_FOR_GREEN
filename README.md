@@ -12,14 +12,14 @@
 The site was made as part of a training project. I worked on the site with my teammate. The project presents a blog page on which each user can upload posts can give a title to the post give their name or nickname add content and add a picture of the post.
 Below are pictures of the project 
 
-<img src='img/Projekt/main1.png'>
-<img src='img/Projekt/main2.png'>
-<img src='img/Projekt/main3.png'>
-<img src='img/Projekt/main4.png'>
-<img src='img/Projekt/main5.png'>
-<img src='img/Projekt/main6.png'>
-<img src='img/Projekt/main7.png'>
-<img src='img/Projekt/main8.png'>
+<img src='Projekt/img/main1.png'>
+<img src='Projekt/img/main2.png'>
+<img src='Projekt/img/main3.png'>
+<img src='Projekt/img/main4.png'>
+<img src='Projekt/img/main5.png'>
+<img src='Projekt/img/main6.png'>
+<img src='Projekt/img/main7.png'>
+<img src='Projekt/img/main8.png'>
 
 ### Built With
 
