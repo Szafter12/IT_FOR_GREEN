@@ -1,16 +1,11 @@
-<div align="center">
-<h1 align="center">IT FOR GREEN FUTURE</h1>
+# IT FOR GREEN FUTURE
 
-  <p align="center">
-  This is a project made as part of the school's IT FOR GREEN FUTURE competition  
-</div>
+This is a project made as part of the school's IT FOR GREEN FUTURE competition. We have 8h to think about the problem and create a good solution. We built a demo blog application which would be a place where censorship does not exist and everyone has freedom of speech and will not be punished for what they have to say
 
-<br><br>
-
-## About The Project
-
-The site was made as part of a training project. I worked on the site with my teammate. The project presents a blog page on which each user can upload posts can give a title to the post give their name or nickname add content and add a picture of the post.
-Below are pictures of the project 
+## Features
+- user can upload a posts
+- user can give a title, content, their nickanme, and post img 
+- user can read the posts
 
 <img src='Projekt/img/main1.png'>
 <img src='Projekt/img/main2.png'>
@@ -21,20 +16,18 @@ Below are pictures of the project
 <img src='Projekt/img/main7.png'>
 <img src='Projekt/img/main8.png'>
 
-### Built With
+## Appendix 
+Of course project isn't finish yet we have only 8 hours to create this from scratch. In the future we plan to re create it with modern tech stack and more features.
 
-HTML
-<br>
-SCSS
-<br>
-JavaScript
-<br>
-SQL
-<br>
-PHP
+## Tech Stack
 
-## Contact
+- HTML
+- SCSS
+- JavaScript
+- SQL
+- PHP
 
-Jakub Pachut - jakubpachut@gmail.com
+## Authors
 
-Project Link: https://github.com/Szafter12/IT_FOR_GREEN/tree/master
+- [@Jakub Pachut](https://www.github.com/Szafter12)
+- [@Jakub Wójtowicz](https://github.com/Pieselos)
